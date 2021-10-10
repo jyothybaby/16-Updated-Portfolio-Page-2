@@ -1,0 +1,490 @@
+* {
+  box-sizing: border-box;
+}
+ /* Declaring global variable */
+:root {
+  --head-foot:rgb(177, 177, 204);
+  --container-color: #dcdcec;
+}
+::selection {
+  background-color: rgb(128, 202, 182);
+  color:black;
+}
+body {
+  font-family: Arial;
+   margin: 0;
+   background-color: rgb(173, 218, 213);
+}
+/* Header and navigation section */
+header {
+  display: flex;
+  flex-wrap:wrap;  
+  background-color: var(--head-foot);
+  margin: 10px;
+  padding: 20px;
+  /* flex-direction: row; */
+  justify-content: space-between ; 
+ }
+
+header h1 {
+  margin-left: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+  /* flex-direction: row; */
+  display:flex;
+  flex-wrap:wrap;  
+}
+
+ nav a {
+  display:flex;
+  color:black;
+  padding: 10px;
+  margin-left: 20px;
+  align-items: flex-end;
+  text-decoration: none;
+}  
+/* Completed the header and Navigation section */
+
+/* Design for Links, About me, Picture */
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Links-Mypic-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+}
+.links {
+  /* flex: 0 1 auto;  */
+  margin: 5px; 
+  flex:1;
+  background-color: #b9c6ae;
+  padding: 25px;
+  text-align: center;
+  border-radius:20px;
+ }
+ .links h2{
+  padding: 10px;
+  text-align: left;
+ }
+
+.links a {
+  padding: 15px;
+  display:block;
+  /* text-decoration: none; */
+}
+.about-me {
+  /* flex: 0 1 auto; */
+  margin: 5px; 
+  flex:1;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content:left; */
+  background-color: rgb(231, 210, 226);
+  border-radius:20px;
+}
+.about-me h2{
+  padding: 20px;
+  text-align: center;
+  
+}
+.about-me ul {
+  padding: 20px;
+  margin-top: 25px;
+  flex: 1; 
+}
+.My-pic-info {
+  margin: 5px; 
+  flex: 1;
+  background-color: rgb(204, 233, 146);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  border-radius:20px;
+}
+
+.picture {
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 1 400px;
+}
+
+
+.picture p {
+  text-align: center;
+
+}
+.picture img {
+  width: 100%;
+}
+/* Completed the design for Links, About me, Picture */
+
+/* Styles for Experience part */
+.work-container {
+ margin: 10px; 
+   width:100%;
+  background-color: whitesmoke;
+  display:flex;
+  margin: -7 auto 20px auto; 
+  position:relative;
+  justify-content: space-evenly;
+  flex: 1 1 auto;
+  border-radius:15px;
+  padding:20px;
+  box-shadow: 5px 10px 18px #474444;
+
+}
+
+.work-container .work-text {
+  padding:20px;
+  border: tomato 5px solid;
+  border-radius:15px;
+
+}
+
+/* Styles for GT Bootcamp project work */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  flex-direction: column;
+   /* width:100%; */
+  margin: 10px;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  /* margin: -7 auto 20px auto; */
+  position:relative; 
+
+  /* border: tomato 5px solid; */
+  border-radius:15px;
+
+  /* position:relative;
+  justify-content: space-evenly;  */
+}
+
+.project-container h1 {
+  margin:10px;
+ } 
+
+ .proj-coll {
+   display: flex;
+ }
+
+ .home-work {
+  margin: 5px; 
+  flex: 1;
+  background-color: rgb(204, 233, 146);
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  /* border: radius 5px; */
+ }
+
+.home-work h1 {
+  font-size: 25px;
+ }
+
+.home-work img {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width:100%; 
+}
+
+.mini-project {
+  margin: 10px;
+  flex : 1;
+  display:flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  background: rgb(231, 197, 110);
+  justify-content: center;
+ 
+}
+.miniproject-01 {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(180, 240, 240);
+  margin:15px;
+  border-radius:20px;
+  }
+  .miniproject-01 h2 {
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+.mini-project .miniproject-01 img {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width:100%; 
+}
+
+.miniproject-02 {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(180, 240, 240);
+  margin: 15px;
+  border-radius:20px;
+  
+  }
+  .miniproject-02 h2 {
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+.mini-project .miniproject-02 img {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width:100%;
+} 
+
+/* Styles for Education part */
+
+.academic-container {
+  margin: 10px; 
+  width:100%;
+ background-color: whitesmoke;
+ display:flex;
+ margin: -7 auto 20px auto; 
+ position:relative;
+ justify-content: space-evenly;
+ flex: 1 1 auto;
+ border-radius:15px;
+ padding:20px;
+ box-shadow: 5px 10px 18px #474444;
+ }
+
+.academic-container .education-text {
+  padding:10px;
+  /* border: tomato 5px solid; */
+  border-radius:15px;
+}
+
+/* Styles for Technical skill set section */
+.skill-container {
+  margin: 10px; 
+   width:100%;
+  background-color: whitesmoke;
+  display:flex;
+  margin: -7 auto 20px auto; 
+  position:relative;
+  justify-content: space-evenly;
+  flex: 1 1 auto;
+  border-radius:15px;
+  padding:20px;
+  box-shadow: 5px 10px 18px #474444;
+ }
+
+.skill-container .skill-text {
+  padding:10px;
+  /* border: tomato 5px solid; */
+  border-radius:15px;
+}
+/* Styles for Contact section */
+.contact-container {
+  margin: 10px; 
+   width:100%;
+  background-color: whitesmoke;
+  display:flex;
+  margin: -7 auto 20px auto; 
+  position:relative;
+  justify-content: space-evenly;
+  flex: 1 1 auto;
+  border-radius:15px;
+  padding:20px;
+  box-shadow: 5px 10px 18px #474444;
+ }
+
+.contact-container .contact-text {
+  padding:10px;
+  /* border: tomato 5px solid; */
+  border-radius:15px;
+}
+.contact-container .button {
+  border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: rgb(94, 90, 90)
+}
+/* Styles for footer */
+footer {
+  text-align: center;
+  background-color: var(--head-foot);
+  padding:20px;
+}
+
+#gitHubContainer {
+  padding:20px;
+ 
+
+}
+
+/* Pseudo -classes */
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: yellow;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+/* Adding some animation to the sections */
+.work-container:hover,.work-container:hover .work-text{
+  position:relative;
+  top:-5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  background-color: var(--container-color);
+  box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+.academic-container:hover,.academic-container:hover .education-text{
+    position:relative;
+    top:-5px;
+    font-family: "Times New Roman", Times, serif;
+     font-size: 20px;
+    background-color: var(--container-color);
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+.skill-container:hover,.skill-container:hover .skill-text{
+      position:relative;
+      top:-5px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 20px;
+      background-color: var(--container-color);
+      box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+.contact-container:hover,.contact-container:hover .contact-text{
+        position:relative;
+        top:-5px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        background-color: var(--container-color);
+        box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+.home-work:hover{
+  position:relative;
+  top:-5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  background:#71e711;
+  box-shadow: inset 0px 0px 8px rgb(115, 102, 236), 0 0 15px rgb(253, 3, 3);
+}
+.miniproject-01:hover{
+  position:relative;
+  top:-5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  background: rgb(121, 97, 81);
+  box-shadow: inset 0px 0px 8px rgb(115, 102, 236), 0 0 15px rgb(253, 3, 3);
+}
+.miniproject-01:hover{
+  position:relative;
+  top:-5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  background: rgb(121, 97, 81);
+  box-shadow: inset 0px 0px 8px rgb(115, 102, 236), 0 0 15px rgb(253, 3, 3);
+}
+.miniproject-02:hover{
+  position:relative;
+  top:-5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  background: rgb(48, 214, 214);
+  box-shadow: inset 0px 0px 8px rgb(115, 102, 236), 0 0 15px rgb(253, 3, 3);
+}
+.links:hover{
+  position:relative;
+  top:-5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  background:#95c56d;;
+  box-shadow: inset 0px 0px 8px rgb(115, 102, 236), 0 0 15px rgb(253, 3, 3);
+}
+.about-me:hover{
+  position:relative;
+  top:-5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  background-color: rgb(212, 122, 191);
+  box-shadow: inset 0px 0px 8px rgb(35, 12, 245), 0 0 15px rgb(37, 248, 9);
+}
+.My-pic-info:hover {
+  position:relative;
+  top:-5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  background-color: rgb(170, 212, 84);
+  box-shadow: inset 0px 0px 8px rgb(32, 1, 1), 0 0 15px rgb(1, 34, 16);
+}
+/* Added mouse over in Email under Links section */
+span[data-descr] {
+  position: relative;
+  text-decoration: underline;
+  color: rgb(202, 35, 35);
+  cursor: grab;
+}
+span[data-descr]:hover::after,
+span[data-descr]:focus::after {
+    content: attr(data-descr);
+    position: absolute;
+    left: 0;
+    top: 24px;
+    min-width: 200px;
+    border: 1px #aaaaaa solid;
+    border-radius: 10px;
+    background-color: #ffffcc;
+    padding: 12px;
+    color: #000000;
+    font-size: 14px;
+    z-index: 1;
+}   
+        
+  /* Styles for Contact-form */
+.text-input:hover,  
+select:hover, button:hover {
+  box-shadow: 0 0 5px #999;
+}
+     
+.text-input:focus {
+   border-right-width: 5px;
+}
+.text-input:placeholder-shown {
+border-style: dashed;
+}
+
+.contact-container .button:active{
+  background: blue;
+}
+
+
+@media screen and (max-width:768px) {
+  nav , .Links-Mypic-container , .project-container, .proj-coll{
+    flex-direction: column;
+  }
+  .My-pic-info{
+    justify-content: center;
+  }
+   }
