@@ -197,6 +197,7 @@ main {
   flex-wrap: wrap;
   border-radius: 10px;
   width:100%; 
+  object-fit: contain;
 }
 
 .mini-project {
@@ -225,6 +226,7 @@ main {
   flex-wrap: wrap;
   border-radius: 10px;
   width:100%; 
+  object-fit: contain;
 }
 
 .miniproject-02 {
@@ -244,8 +246,28 @@ main {
   flex-wrap: wrap;
   border-radius: 10px;
   width:100%;
+  object-fit: contain;
 } 
 
+.miniproject-03 {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(180, 240, 240);
+  margin: 15px;
+  border-radius:20px;
+  
+  }
+  .miniproject-03 h2 {
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+.mini-project .miniproject-03 img {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width:100%;
+  object-fit: contain;
+} 
 /* Styles for Education part */
 
 .academic-container {
