@@ -20,8 +20,8 @@
 
 Screenshots:
 
-![screen-1]()<br>
-![screen-2]()<br>
+![screen-1](https://github.com/jyothybaby/16-Updated-Portfolio-Page-2/blob/main/Screenshots/screen1.png)<br>
+![screen-2](https://github.com/jyothybaby/16-Updated-Portfolio-Page-2/blob/main/Screenshots/screen2.png)<br>
 ![screen-3](https://github.com/jyothybaby/08-Updated-Portfolio/blob/main/Screenshots/screenshot-3.png)<br>
 
 
